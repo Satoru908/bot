@@ -6,13 +6,13 @@ from time import sleep
 from telethon.tl import types
 from telethon.errors import FloodWaitError
 from telethon.errors import FloodWaitError, ChatAdminRequiredError
-api_id = '22668361'  
-api_hash = '715050841e647ec87ef1428d90d9ade0'  
+api_id = '26625932'  
+api_hash = '12fe26bac8105ae8916dc150ebbfaca7'  
 
 
-grupo_origen_id = -1002033038918 #<----AQUI EL GRUPO  DE ORIGEN 
+grupo_origen_id = -1004507143315 #<----AQUI EL GRUPO  DE ORIGEN 
 
-tu_numero_telefono = '+51979528550'
+tu_numero_telefono = '+51920749530'
 
 def iniciar_sesion():
     client = TelegramClient('session_name', api_id, api_hash)
