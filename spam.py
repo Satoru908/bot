@@ -10,7 +10,7 @@ api_id = '26625932'
 api_hash = '12fe26bac8105ae8916dc150ebbfaca7'  
 
 
-grupo_origen_id = -1004507143315 #<----AQUI EL GRUPO  DE ORIGEN 
+grupo_origen_id = 4507143315 #<----AQUI EL GRUPO  DE ORIGEN 
 
 tu_numero_telefono = '+51920749530'
 
@@ -47,8 +47,8 @@ def reenviar_mensajes(client):
                         if error_str not in errores_impresos:
                             print(f"Error al enviar mensaje al grupo {chat.title}: {error_str}")
                             errores_impresos.add(error_str)
-            print("Esperar 900 segundos para enviar el proximo mensaje.")
-            sleep(900)  # Esperar 900 segundos para enviar el proximo mensaje.
+            print("Esperar 15 segundos para enviar el proximo mensaje.")
+            sleep(15)  # Esperar 15 segundos para enviar el proximo mensaje.
 
     except Exception as ex:
         print(f"Error general: {ex}")
@@ -60,7 +60,7 @@ if __name__ == "__main__":
     while True:
         try:
             reenviar_mensajes(client)
-            print("Esperar 900 segundos para enviar el proximo mensaje.")
-            sleep(900)  # Esperar 900 segundos para enviar el proximo mensaje.
+            print("Esperar 15 segundos para enviar el proximo mensaje.")
+            sleep(15)  # Esperar 15 segundos para enviar el proximo mensaje.
         except Exception as ex:
             print(f"Error general: {ex}")
