@@ -47,8 +47,8 @@ def reenviar_mensajes(client):
                         if error_str not in errores_impresos:
                             print(f"Error al enviar mensaje al grupo {chat.title}: {error_str}")
                             errores_impresos.add(error_str)
-            print("Esperar 15 segundos para enviar el proximo mensaje.")
-            sleep(15)  # Esperar 15 segundos para enviar el proximo mensaje.
+            print("Esperar 60 segundos para enviar el proximo mensaje.")
+            sleep(60)  # Esperar 60 segundos para enviar el proximo mensaje.
 
     except Exception as ex:
         print(f"Error general: {ex}")
@@ -60,7 +60,7 @@ if __name__ == "__main__":
     while True:
         try:
             reenviar_mensajes(client)
-            print("Esperar 15 segundos para enviar el proximo mensaje.")
-            sleep(15)  # Esperar 15 segundos para enviar el proximo mensaje.
+            print("Esperar 60 segundos para enviar el proximo mensaje.")
+            sleep(60)  # Esperar 60 segundos para enviar el proximo mensaje.
         except Exception as ex:
             print(f"Error general: {ex}")
